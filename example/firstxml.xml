@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="firstxsl.xsl"?>
+<catalog>
+    <book topic="crimi">
+        <author>Іванов А.Б.</author>
+        <title>Чесний шахрай</title>
+    </book>
+    <book topic="lifehack">
+        <author>Петров Е.М.</author>
+        <title>Як продати совість</title>
+    </book>
+    <book topic="politics">
+        <author>Сидоров М.Ж.</author>
+        <title>Кінець епохи</title>
+    </book>
+</catalog>
