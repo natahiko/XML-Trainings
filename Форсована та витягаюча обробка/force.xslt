@@ -37,7 +37,7 @@
             </th>
         </tr>
         <xsl:for-each select="./employee">
-            <xsl:sort select = "surname"/>
+            <xsl:sort select="surname"/>
             <tr>
                 <xsl:apply-templates select="."></xsl:apply-templates>
             </tr>
