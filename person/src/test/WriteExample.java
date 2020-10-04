@@ -1,3 +1,5 @@
+package test;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.xml.stream.XMLOutputFactory;

@@ -1,5 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:xls="http://www.w3.org/1999/XSL/Transform">
+    <xsl:param name="maxSalary" select="2"/>
     <xsl:template match="/">
         <HTML>
             <head>
@@ -18,25 +19,24 @@
                             <xsl:text>Зарплата</xsl:text>
                         </th>
                     </tr>
-                    <xsl:for-each select="employees/employee">
-                        <xsl:sort select="surname"/>
-                        <tr>
-                            <td>
-                                <i>
-                                    <xsl:value-of select="surname"/>
-                                </i>
-                                <xsl:text> </xsl:text>
-                                <xsl:value-of select="name"/><xsl:text> </xsl:text>
-                            </td>
-                            <td>
-                                <xsl:value-of select="salary"/>
-                            </td>
-                        </tr>
+                    <xsl:for-each select="employees/employee[salary >= $maxSalary]">
+
+                            <tr>
+                                <td>
+                                    <i>
+                                        <xsl:value-of select="surname"/>
+                                    </i>
+                                    <xsl:text> </xsl:text>
+                                    <xsl:value-of select="name"/><xsl:text> </xsl:text>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="salary"/>
+                                </td>
+                            </tr>
                     </xsl:for-each>
                 </table>
             </body>
         </HTML>
 
     </xsl:template>
-
 </xsl:stylesheet>
