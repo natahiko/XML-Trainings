@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><HTML>
+    <head>
+        <title> Salaries </title>
+    </head>
+    <body>
+        <h1 style="color:red;">Salaries</h1>
+        <employee>
+            <surname>Shkarovska</surname>
+            <name>Nata</name>
+            <salary>5</salary>
+        </employee>
+        <employee>
+            <surname>CSurmane1</surname>
+            <name>Name1</name>
+            <salary>4</salary>
+        </employee>
+        <employee>
+            <surname>Surmane2</surname>
+            <name>Name2</name>
+            <salary>3</salary>
+        </employee>
+    </body>
+</HTML>

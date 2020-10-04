@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class TRAXParcer {
     public static void main(String[] args) {
         Scanner myInput = new Scanner( System.in );
-        System.out.print( "maxSalary: " );
-        int maxSalary = myInput.nextInt();
+        System.out.print( "minSalary: " );
+        int minSalary = myInput.nextInt();
 
         TransformerFactory factory = TransformerFactory.newInstance();
         Source xsl = new StreamSource("file.xslt");
@@ -17,12 +17,12 @@ public class TRAXParcer {
 
         try {
             transformer = factory.newTransformer(xsl);
-            transformer.setParameter("maxSalary", maxSalary);
+            transformer.setParameter("minSalary", minSalary);
         } catch (TransformerConfigurationException e) {
             e.printStackTrace();
         }
         Source xml =new StreamSource("file.xml");
-        Result result = new StreamResult("result.html");
+        Result result = new StreamResult("result.xml");
         try {
             transformer.transform(xml,result);
             System.out.println("The file has been successfully created");
