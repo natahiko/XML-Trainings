@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="/file.xslt"?>
+<employees>
+    <employee>
+        <name>Nata</name>
+        <surname>Shkarovska</surname>
+        <salary>5</salary>
+    </employee>
+    <employee>
+        <name>Name1</name>
+        <surname>CSurmane1</surname>
+        <salary>4</salary>
+    </employee>
+    <employee>
+        <name>Name2</name>
+        <surname>Surmane2</surname>
+        <salary>3</salary>
+    </employee>
+    <employee>
+        <name>Name3</name>
+        <surname>BSurmane3</surname>
+        <salary>2</salary>
+    </employee>
+    <employee>
+        <name>Name4</name>
+        <surname>ASurmane4</surname>
+        <salary>1</salary>
+    </employee>
+</employees>

@@ -22,7 +22,7 @@
     </employee>
     <employee unit="development">
         <name>Name2</name>
-        <surname>Surmane2</surname>
+        <surname>BSurmane2</surname>
         <middlename>MiddleName2</middlename>
         <birth_date>22.03.2000</birth_date>
         <salary>2001</salary>
@@ -40,7 +40,7 @@
     </employee>
     <employee unit="development">
         <name>Name4</name>
-        <surname>Surmane4</surname>
+        <surname>ASurmane4</surname>
         <middlename>MiddleName4</middlename>
         <birth_date>04.04.2000</birth_date>
         <salary>2004</salary>
