@@ -11,18 +11,53 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="node()|@*">
-        <xsl:copy>
-            <xsl:for-each select="*[not(*|@*)]">
-                <xsl:attribute name="{name()}">
-                    <xsl:value-of select="text()"/>
-                </xsl:attribute>
-            </xsl:for-each>
-            <xsl:apply-templates select="node()|@*"/>
-        </xsl:copy>
+
+    <xsl:template match="node()">
+        <xsl:if test="$mode='collapse'">
+            <xsl:copy>
+                <xsl:for-each select="*[not(*|@*)]">
+                    <xsl:attribute name="{name()}">
+                        <xsl:value-of select="text()"/>
+                    </xsl:attribute>
+                </xsl:for-each>
+                <xsl:apply-templates select="node()|@*"/>
+            </xsl:copy>
+        </xsl:if>
+
+        <xsl:if test="$mode='expand'">
+            <xsl:copy>
+                <xsl:apply-templates select="node()|@*"/>
+            </xsl:copy>
+        </xsl:if>
     </xsl:template>
 
+
+    <xsl:template match="@*">
+        <xsl:if test="$mode='collapse'">
+            <xsl:copy>
+                <xsl:for-each select="*[not(*|@*)]">
+                    <xsl:attribute name="{name()}">
+                        <xsl:value-of select="text()"/>
+                    </xsl:attribute>
+                </xsl:for-each>
+                <xsl:apply-templates select="node()|@*"/>
+            </xsl:copy>
+        </xsl:if>
+
+        <xsl:if test="$mode='expand'">
+            <xsl:element name="{name()}">
+                <xsl:value-of select="."/>
+            </xsl:element>
+        </xsl:if>
+    </xsl:template>
+
+
     <xsl:template match="*[not(*|@*)]">
+        <xsl:if test="$mode='expand'">
+            <xsl:copy>
+                <xsl:apply-templates select="node()|@*"/>
+            </xsl:copy>
+        </xsl:if>
     </xsl:template>
 
 

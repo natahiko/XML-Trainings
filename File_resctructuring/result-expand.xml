@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><employees>
+        
+    <employee>
+        <unit>development</unit>
+        <name>Nata</name>
+        <surname>Shkarovska</surname>
+        <year>2000</year>
+                
+        <email>n.shkarow@gmail.com</email>
+            
+    </employee>
+        
+    <employee>
+        <unit>development</unit>
+        <name>Name32</name>
+        <year>1999</year>
+        <email>email@my.com</email>
+            
+    </employee>
+        
+    <employee>
+        <unit>development</unit>
+        <name>MyName</name>
+        <surname>MySurname</surname>
+        <year>2001</year>
+        <salary>10000</salary>
+                
+        <address>
+            <city>Kyiv</city>
+            <street>Dragomanova</street>
+        </address>
+            
+    </employee>
+        
+    <employee>
+        <unit>development</unit>
+        <name>Names22</name>
+        <salary>10500</salary>
+                
+        <email>
+            <subdomain>gmail</subdomain>
+            email3@gmail.com
+        </email>
+            
+    </employee>
+    
+</employees>

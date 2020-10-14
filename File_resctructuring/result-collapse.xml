@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+
+
+    <employee unit="development" name="Nata" surname="Shkarovska" year="2000" email="n.shkarow@gmail.com">
+
+
+    </employee>
+
+
+    <employee unit="development" name="Name32" year="1999" email="email@my.com">
+
+
+    </employee>
+
+
+    <employee unit="development" name="MyName" surname="MySurname" year="2001" salary="10000">
+
+
+        <address city="Kyiv" street="Dragomanova">
+
+
+        </address>
+
+
+    </employee>
+
+
+    <employee unit="development" name="Names22" salary="10500">
+
+
+        <email subdomain="gmail">
+
+            email3@gmail.com
+        </email>
+
+
+    </employee>
+
+
+</employees>
