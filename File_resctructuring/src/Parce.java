@@ -7,13 +7,14 @@ import java.util.Scanner;
 
 public class Parce {
     public static void main(String[] args) {
-        Scanner myInput = new Scanner( System.in );
-        System.out.print( "mode: " );
-        String mode = myInput.nextLine();
-        while(mode.equals("expand") && mode.equals("collapse")){
-            System.out.print( "mode: " );
-            mode = myInput.nextLine();
-        }
+//        Scanner myInput = new Scanner( System.in );
+//        System.out.print( "mode: " );
+//        String mode = myInput.nextLine();
+//        while(mode.equals("expand") && mode.equals("collapse")){
+//            System.out.print( "mode: " );
+//            mode = myInput.nextLine();
+//        }
+        String mode = "expand";
 
         TransformerFactory factory = TransformerFactory.newInstance();
         Source xsl = new StreamSource("first.xslt");
@@ -26,7 +27,7 @@ public class Parce {
             e.printStackTrace();
         }
         Source xml =new StreamSource("first.xml");
-        Result result = new StreamResult("result.xml");
+        Result result = new StreamResult("result2.xml");
         try {
             transformer.transform(xml,result);
             System.out.println("The file has been successfully created");
