@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="myGrouping.xslt"?>
+<employees>
+    <employee unit="development">
+        <name>Nata</name>
+        <surname>Shkarovska</surname>
+        <middlename>Sergiivna</middlename>
+        <birth_date>23.03.2000</birth_date>
+        <salary>2000</salary>
+        <address>Kyiv, Dragomanova street</address>
+        <email>n.shkarow@gmail.com</email>
+        <link>https://github.com/natahiko</link>
+    </employee>
+    <employee unit="development">
+        <name>Name1</name>
+        <surname>Surmane1</surname>
+        <middlename>MiddleName</middlename>
+        <birth_date>23.03.2000</birth_date>
+        <salary>2001</salary>
+        <address>Kyiv, Dragomanova street</address>
+        <email>email1@gmail.com</email>
+    </employee>
+    <employee unit="sale">
+        <name>Name2</name>
+        <surname>BSurmane2</surname>
+        <middlename>MiddleName2</middlename>
+        <birth_date>22.03.2000</birth_date>
+        <salary>2001</salary>
+        <address>Kyiv, Dragomanova street</address>
+        <email>email2@gmail.com</email>
+    </employee>
+    <employee unit="sale">
+        <name>Name3</name>
+        <surname>Surmane3</surname>
+        <middlename>MiddleName3</middlename>
+        <birth_date>12.02.2000</birth_date>
+        <salary>2000</salary>
+        <address>Kyiv, Dragomanova street</address>
+        <email>email3@gmail.com</email>
+    </employee>
+    <employee unit="development">
+        <name>Name4</name>
+        <surname>ASurmane4</surname>
+        <middlename>MiddleName4</middlename>
+        <birth_date>04.04.2000</birth_date>
+        <salary>2004</salary>
+        <address>Kyiv, Dragomanova street</address>
+        <email>email4@gmail.com</email>
+        <link>https://github.com/natahiko</link>
+    </employee>
+</employees>
