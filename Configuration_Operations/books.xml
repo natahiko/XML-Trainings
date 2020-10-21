@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <book ISBN="123456">
+        <author> Ivanov </author>
+        <title> How to rob a bank </title>
+        <publisher> Samizdat </publisher>
+    </book>
+    <book ISBN="9999999">
+        <author>Petrov</author>
+        <title>Ku-ku</title>
+        <publisher>Angsoc-Kommerz</publisher>
+    </book>
+    <book ISBN="1000000">
+        <author>Quazi Moda</author>
+        <title>My darlings</title>
+        <publisher>Paris-Monmartr</publisher>
+
+    </book>
+</catalog>
