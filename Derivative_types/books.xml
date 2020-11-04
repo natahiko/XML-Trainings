@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<katalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="books.xslt">
+    <book>
+        <author>Ivanov</author>
+        <title> Addicted to murders </title>
+    </book>
+    <book>
+        <author>Petrov</author>
+        <title>Innocent victims</title>
+    </book>
+    <book xsi:type="scientific-book">
+        <author>Sidorov</author>
+        <title>XML and databases</title>
+        <reviewer>
+            Donald Knut
+        </reviewer>
+    </book>
+
+</katalog>
