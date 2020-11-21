@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="husband.xsd">
+<!--    too height-->
+    <husband xsi:type="future">
+        <name>John Smith</name>
+        <email>smith55444_john33@gmail.com</email>
+        <hair_color>blond</hair_color>
+        <eyes_color>blue</eyes_color>
+        <height>200</height>
+    </husband>
+
+<!--    incorrect eye & hair color-->
+    <husband xsi:type="future">
+        <name>Alex Grey</name>
+        <email>grey_alx@gmail.com</email>
+        <eyes_color>red</eyes_color>
+        <hair_color>light_brown</hair_color>
+        <height>183.0</height>
+        <odds>2.0</odds>
+    </husband>
+
+<!--    incorrect email-->
+    <husband xsi:type="current">
+        <name>Steven Stalone</name>
+        <email>stalonem</email>
+        <eyes_color>green</eyes_color>
+        <hair_color>black</hair_color>
+        <height>173.0</height>
+        <wedding_date>2005-05-23</wedding_date>
+    </husband>
+
+    <!--    no name element-->
+    <husband xsi:type="past">
+        <email>ivan@gmail.com</email>
+        <eyes_color>blue</eyes_color>
+        <hair_color>blond</hair_color>
+        <height>175.0</height>
+        <wedding_date>2000-03-23</wedding_date>
+        <divorce_date>2000-04-03</divorce_date>
+        <reason>He said that i'm fat</reason>
+    </husband>
+
+    <!--    uncorect element order-->
+    <husband xsi:type="past">
+        <name>Peter Dubinsliy</name>
+        <email>ivan@gmail.com</email>
+        <divorce_date>2000-04-03</divorce_date>
+        <eyes_color>blue</eyes_color>
+        <hair_color>blond</hair_color>
+        <height>175.0</height>
+        <wedding_date>2000-03-23</wedding_date>
+        <reason>He said that i'm fat</reason>
+    </husband>
+
+    <!--height is not number-->
+    <husband xsi:type="past">
+        <name>Peter Dubinsliy</name>
+        <email>petro33@gmail.com</email>
+        <eyes_color>green</eyes_color>
+        <hair_color>brown</hair_color>
+        <height>one hundered</height>
+        <wedding_date>2000-03-23</wedding_date>
+        <divorce_date>2002-05-23</divorce_date>
+    </husband>
+
+</register>
