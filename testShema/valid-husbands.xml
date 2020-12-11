@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="husband.xsd">
+    <husband xsi:type="future">
+        <name>John Smith</name>
+        <email>smith55444_john33@gmail.com</email>
+        <hair_color>blond</hair_color>
+        <eyes_color>blue</eyes_color>
+        <height>135</height>
+    </husband>
+
+    <husband xsi:type="future">
+        <name>Alex Grey</name>
+        <email>grey_alx@gmail.com</email>
+        <eyes_color>grey</eyes_color>
+        <hair_color>grey</hair_color>
+        <height>183.0</height>
+        <odds>2.0</odds>
+    </husband>
+
+    <husband xsi:type="current">
+        <name>Steven Stalone</name>
+        <email>stalone33@gmail.com</email>
+        <eyes_color>green</eyes_color>
+        <hair_color>black</hair_color>
+        <height>173.0</height>
+        <wedding_date>2005-05-23</wedding_date>
+    </husband>
+
+    <husband xsi:type="past">
+        <name>Ivan Ivanov</name>
+        <email>ivan@gmail.com</email>
+        <eyes_color>blue</eyes_color>
+        <hair_color>blond</hair_color>
+        <height>175.0</height>
+        <wedding_date>2000-03-23</wedding_date>
+        <divorce_date>2000-04-03</divorce_date>
+        <reason>He said that i'm fat</reason>
+    </husband>
+
+    <husband xsi:type="past">
+        <name>Peter Dubinsliy</name>
+        <email>petro33@gmail.com</email>
+        <eyes_color>green</eyes_color>
+        <hair_color>brown</hair_color>
+        <height>156.0</height>
+        <wedding_date>2000-03-23</wedding_date>
+        <divorce_date>2002-05-23</divorce_date>
+    </husband>
+
+</register>

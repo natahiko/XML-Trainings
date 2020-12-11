@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="husband">
+        <xs:sequence>
+            <!--            NAME-->
+            <xs:element name="name" type="xs:string"/>
+
+            <!--            EMAIL-->
+            <xs:element name="email">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[^@]+@[^\.]+\..+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:group ref="eye_hair"/>
+            <!--            HEIGHT-->
+            <xs:element name="height">
+                <xs:simpleType>
+                    <xs:restriction base="xs:double">
+                        <xs:minInclusive value="55.0"/>
+                        <xs:maxInclusive value="280.0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+<!--    EYE AND HAIR COLORS IN ANY ORDER-->
+    <xs:group name="eye_hair">
+        <xs:choice>
+            <xs:sequence>
+                <xs:element name="eyes_color" type="eyes_color"/>
+                <xs:element name="hair_color" type="hair_color"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element name="hair_color" type="hair_color"/>
+                <xs:element name="eyes_color" type="eyes_color"/>
+            </xs:sequence>
+        </xs:choice>
+    </xs:group>
+
+    <!--            EYES COLOR-->
+    <xs:simpleType name="eyes_color">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="green"/>
+            <xs:enumeration value="grey"/>
+            <xs:enumeration value="blue"/>
+            <xs:enumeration value="brown"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!--            HAIR COLOR-->
+    <xs:simpleType name="hair_color">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="blond"/>
+            <xs:enumeration value="grey"/>
+            <xs:enumeration value="black"/>
+            <xs:enumeration value="brown"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="future">
+        <xs:complexContent>
+            <xs:extension base="husband">
+                <xs:sequence>
+                    <!--            ODDS-->
+                    <xs:element name="odds" minOccurs="0" maxOccurs="1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double">
+                                <xs:minInclusive value="0.0"/>
+                                <xs:maxInclusive value="100.0"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="current">
+        <xs:complexContent>
+            <xs:extension base="husband">
+                <xs:sequence>
+                    <xs:element name="wedding_date" type="xs:date"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="past">
+        <xs:complexContent>
+            <xs:extension base="husband">
+                <xs:sequence>
+                    <xs:element name="wedding_date">
+                    </xs:element>
+                    <xs:element name="divorce_date">
+                    </xs:element>
+                    <xs:element name="reason" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="register">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="husband" maxOccurs="200"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
